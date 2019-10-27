@@ -2,6 +2,8 @@
 # MySQL成长日志
 [心路历程](./Milestone.md)
 
+[问题集锦](./bugfix.md)
+
 ## SQL 简介
 ### 什么是 SQL？
 * SQL 指结构化查询语言
