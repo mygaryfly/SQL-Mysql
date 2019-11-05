@@ -4,6 +4,8 @@
 
 [问题集锦](./bugfix.md)
 
+[摘录ourmysql](http:/ourmysql.com/archives/1461)
+
 ## SQL 简介
 ### 什么是 SQL？
 * SQL 指结构化查询语言
