@@ -17,6 +17,7 @@ Error 1064为语法错误，本次报错原因是create table中每列数据描�
 #### case 2 Error 1054 & 1366
 ##### eg-a Error 1054
 Error 1054, unknown column in field list,指的是当前输入的值格式与column设定的值类型不匹配。如下图中，字符串姓名和性别在引用varchar类型时，它们不是纯粹的数字，应当加上单引号。
+
 ![](./Images/case2a.jpg)
 
 ##### eg-b Error 1366
@@ -24,7 +25,9 @@ Error 1366,incorrect string value,是字符串问题，系统以此提示使用�
 ![](./Images/case2b.jpg)
 
 ![](./Images/case2c.jpg)
+
 我们找到MySQL的系统配置文件my.ini并修改字符串类型如下。切记，修改前应该net stop mysql服务，否则当前修改无效且可能造成服务器无法连接的问题。修改后再重新启动MySQL服务。另，my.ini本身的编辑格式为ANSI，不要保存成其他格式，否则同样会造成MySQL server无法连接。
+
 ![](./Images/case2d.jpg)
 
 ![](./Images/case2e.jpg)
