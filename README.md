@@ -1,10 +1,10 @@
 ![](./Images/mysql.jpg)
 # MySQL成长日志
-[心路历程](./Milestone.md)
+[成长之路](./Milestone.md)
 
 [问题集锦](./bugfix.md)
 
-[摘录ourmysql](http:/ourmysql.com/archives/1461)
+[题库](./test_bank.md)
 
 ## SQL 简介
 ### 什么是 SQL？
