@@ -1,4 +1,5 @@
 #### case 1 Error 1064
+
 ##### eg-a
 Error 1064为语法错误，本次报错原因是create table中每列数据描述结尾虽然都要以逗号结尾，但是最后一列的末尾不需要逗号
 
@@ -15,13 +16,17 @@ Error 1064为语法错误，本次报错原因是create table中每列数据描�
 ![](./Images/case1d.jpg)
 
 #### case 2 Error 1054 & 1366
+
 ##### eg-a Error 1054
+
 Error 1054, unknown column in field list,指的是当前输入的值格式与column设定的值类型不匹配。如下图中，字符串姓名和性别在引用varchar类型时，它们不是纯粹的数字，应当加上单引号。
 
 ![](./Images/case2a.jpg)
 
 ##### eg-b Error 1366
+
 Error 1366,incorrect string value,是字符串问题，系统以此提示使用的数值字符串不符合表格默认字符串。我们可以用show create table table_name的方式查询建表时的数据，最下方一行能看到表格采用的字符串类型。本示例中表格默认字符串类型为latin1，由于中文的录入需要将字符串改为uef8。
+
 ![](./Images/case2b.jpg)
 
 ![](./Images/case2c.jpg)
